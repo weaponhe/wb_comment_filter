@@ -1,0 +1,19 @@
+.comment_lists {
+	overflow: hidden;
+}
+
+.comment_list dt img {
+	display: block;
+	overflow: hidden;
+	float: left;
+	display: inline;
+	width: 30px;
+	padding: 3px 0 0;
+}
+.comment_list dd {
+	margin: 0 0 0 40px;
+	line-height: 21px;
+	word-wrap: break-word;
+	zoom: 1;
+	vertical-align: text-bottom;
+}

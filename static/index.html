@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>评论筛选器</title>
+
+    <!-- Bootstrap -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="/static/css/comment.css" rel="stylesheet">
+
+  </head>
+  <body>
+  <div class="container">
+    <div class="row" id="row-search">
+      <div class="col-md-12">
+        <div class="input-group">
+          <input type="text" class="form-control" id="text-wb-url" placeholder="请输入微博链接" value="A9ie6oIJp" >
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="button">？</button>
+            <button class="btn btn-primary" type="submit" id="btn-wb-url">获取评论列表</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="row-status">
+      <div class="col-md-12">
+         <div class="panel panel-default">
+          <div class="panel-body" id="div-status">
+          </div>
+            <div class="btn-group btn-group-justified">
+              <div class="btn-group">
+                <button id="btn-preview" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+                 预览
+                </button>
+              </div>
+              <div class="btn-group">
+                <button id="btn-test" class="btn btn-default btn-download">下载图片</button>
+              </div>
+              <div class="btn-group">
+                <button id="btn-test2" type="button" class="btn btn-success">发微博</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="row" id="row-comments">
+      <div class="col-md-12" id="div-comments">
+        <ul class="list-group comment_list" id="list-comments">
+        </ul>
+        <ul class="pager" id="pager-comments">
+        </ul>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">预览</h4>
+          </div>
+          <div class="modal-body" id="modal-body">
+            <ul class="list-group comment_list" id="list-comments-selected">
+            </ul>
+          </div> 
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary btn-download">下载图片</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/static/js/lib/bootstrap.min.js"></script>
+    <script src="/static/js/lib/html2canvas.js"></script>
+    <script src="/static/js/src/conf.js"></script>
+    <script src="/static/js/src/action.js"></script>
+    <script src="/static/js/src/dao.js"></script>
+    <script src="/static/js/src/adapter.js"></script>
+  </body>
+</html>

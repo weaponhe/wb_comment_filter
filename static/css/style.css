@@ -1,0 +1,18 @@
+html { overflow-y: scroll; }
+body{
+	background-color: "#000";
+	margin: 15px;
+}
+a{
+color: #0a8cd2;
+}
+.row{
+	margin-bottom: 15px;
+}
+.panel{
+	margin-bottom: 0;
+}
+.container {
+	margin:0 auto;
+	width:780px;
+}
